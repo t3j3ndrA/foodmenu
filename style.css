@@ -1,0 +1,134 @@
+/* google font */
+/* for content */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* for title */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    --regular:'Roboto', sans-serif;
+    --rocknroll :'Pacifico', cursive;
+}
+.center {
+  margin: 2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.underline{
+    width: 80%;
+    height: 2px;
+    background-color: rgba(75, 75, 75, 0.87);
+    margin: 10px auto 10px auto;
+}
+.heading {
+  text-align: center;
+
+  margin: 1rem 1rem 2rem 1rem;
+    font-family: var(--rocknroll);
+    letter-spacing: 0.26rem;
+    text-transform: capitalize;
+
+}
+/* selection buttons styling */
+.allbtns>button{
+  color: goldenrod;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.allbtns>button:hover{
+  color: white;
+  background-color: goldenrod;
+  transition: background-color 0.2s linear;
+}
+
+/*  */
+/* food item stylings */
+.fooditems {
+
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.item {
+  margin: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-img{
+  border: 2px solid rgb(73, 78, 73);
+  width: 260px;
+  height: 150px
+
+
+}
+.item-img > img{
+display: block;
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+}
+.item-info{
+  padding: 0px;
+}
+.item-content{
+  margin: 1.3rem 1rem 1.3rem 0rem;
+}
+.item-heading{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  text-transform: capitalize;
+}
+
+/* responsive desing */
+
+@media screen and (min-width:638px) {
+  .fooditems{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 14%;
+    margin-right: 14%;
+
+  }
+  .item{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .item-content{
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+   .fooditems{
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    margin: 0;;
+    flex-direction: column;
+    justify-content: center;
+
+}
+  .item-img{
+    
+      width: 240px;
+      height: 180px;
+
+
+  }
+}
